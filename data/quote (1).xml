@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 16, 2020 at 09:06 PM
+- Server version: 10.4.13-MariaDB
+- PHP Version: 7.4.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    
+    <pma:structure_schemas>
+        <pma:database name="test" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="quote">
+                CREATE TABLE `quote` (
+                  `quote_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `quote` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `short_msg` varchar(1000) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `long_msg` varchar(2000) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `trans_date` datetime NOT NULL DEFAULT current_timestamp()
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+-->
+    <!--
+    - Database: 'test'
+    -->
+    <database name="test">
+        <!-- Table quote -->
+        <table name="quote">
+			<column name="quote_id">1</column>
+            <column name="quote">no pain no gain</column>
+            <column name="short_msg">Nothing will come of nothing.</column>
+            <column name="long_msg">All of us should take efforts to get the results that we want. Otherwise, the future will be bleak. For the betterment of humanity, we have to do many good acts which will produce the expected results. The humankind has seen many such people who have left behind their foot prints of many achievements which produce the same results.</column>
+            <column name="trans_date">2020-07-30 12:09:00</column>
+        </table>
+        <table name="quote">
+			<column name="quote_id">2</column>
+            <column name="quote">dry up while sun is shinning</column>
+            <column name="short_msg">Make good use of your time or make the most of an opportunity while you have the chance.</column>
+            <column name="long_msg">Opportunities may only come along every so often. It is good to take stock of a situation and realize when an opportunity presents itself. If you can act on it before it slips away</column>
+            <column name="trans_date">2020-07-31 00:16:39</column>
+        </table>
+        <table name="quote">
+			<column name="quote_id">3</column>
+            <column name="quote">Business opportunities are like buses, there is always another one coming.</column>
+            <column name="short_msg">Richard Branson</column>
+            <column name="long_msg"></column>
+            <column name="trans_date">2020-08-10 13:35:29</column>
+        </table>
+        <table name="quote">
+			<column name="quote_id">4</column>
+            <column name="quote">Starting your own business is not just a job. It is a way of life.</column>
+            <column name="short_msg">Richard Branson</column>
+            <column name="long_msg"></column>
+            <column name="trans_date">2020-08-10 13:35:29</column>
+        </table>
+    </database>
+</pma_xml_export>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 10, 2020 at 08:34 AM
+- Server version: 10.4.13-MariaDB
+- PHP Version: 7.4.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="test" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="quote">
+                CREATE TABLE `quote` (
+                  `quote_id` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `quote` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `short_msg` varchar(1000) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `long_msg` varchar(2000) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `trans_date` datetime NOT NULL DEFAULT current_timestamp()
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'test'
+    -->
+    <database name="test">
+        <!-- Table quote -->
+        <table name="quote">
+            <column name="quote_id">quot3</column>
+            <column name="quote">Business opportunities are like buses, there's always another one coming.</column>
+            <column name="short_msg">Richard Branson</column>
+            <column name="long_msg"></column>
+            <!--<column name="trans_date">2020-07-30 12:09:00</column>-->
+        </table>
+        <table name="quote">
+            <column name="quote_id">quot4</column>
+            <column name="quote">Starting your own business isn't just a job. It's a way of life.</column>
+            <column name="short_msg">Richard Branson</column>
+            <column name="long_msg"></column>
+            <!--<column name="trans_date">2020-07-31 00:16:39</column>-->
+        </table>
+    </database>
+</pma_xml_export>

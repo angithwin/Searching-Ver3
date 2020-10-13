@@ -51,19 +51,24 @@ h1::after {
 
 /* Table */
 table {
-	border-collapse: collapse;
+	/*border-collapse: collapse;*/
 	font-family: "Raleway", sans-serif;
+	font-size: 13px;
+	/*background-color: #fff;*/
+	
 }
 table, th, td {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 th, td {
 	padding: 10px;
 	text-align: center;
-	background-color: #fff;
 }
 
-
+th:nth-of-type(even) {background-color: #a09b9b; color: white;}
+td:nth-of-type(even) {background-color: #a09b9b; color: white;}
+th:nth-of-type(odd) {background-color: #fff;}
+td:nth-of-type(odd) {background-color: #fff;}
 
 /* Search Box */
 

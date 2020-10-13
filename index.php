@@ -26,7 +26,7 @@
 
 <h1>Content Search</h1>
 
-<form action="search.php" method="POST">
+<form action="search_1.php" method="POST">
 	<input type="text" name="name" placeholder="Search Here ..." 
 	id="searchBox" oninput=search(this.value)>
 </form>
